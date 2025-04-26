@@ -760,6 +760,8 @@ internal constructor(
                 }
             }
 
+            suspendBelowMinBitrate
+
             iceServers = mergedServers
         }
             ?: RTCConfiguration(serverIceServers).apply {
